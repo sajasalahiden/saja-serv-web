@@ -1,0 +1,25 @@
+.testmonial img {
+  width: 100px;
+  aspect-ratio: 1;
+}
+
+.testmonial #testmonial-users {
+  width: 700px;
+}
+
+.testmonial .carousel-indicators {
+  top: 105%;
+}
+
+.testmonial .carousel-indicators [data-bs-target] {
+  background-color: #ff7a57;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+@media(min-width:0) and (max-width:992px) {
+  .testmonial #testmonial-users {
+    width: 100%
+  }
+}

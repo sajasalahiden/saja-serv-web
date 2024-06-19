@@ -1,0 +1,77 @@
+/*  portfolio */
+.portfolio .card {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.portfolio .card:hover .content {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.portfolio .content {
+  position: absolute;
+  background-color: #ff7a57aa;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.portfolio .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.portfolio .content a {
+  border-radius: 50%;
+  border: 1px solid;
+  width: 40px;
+  aspect-ratio: 1;
+  display: inline-grid !important;
+  place-items: center;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.portfolio .content a:hover {
+  background-color: #fff;
+  color: #ff7a57 !important;
+}
+
+.portfolio .carousel-control-next {
+  top: 105%;
+  left: 50%;
+  transform: translateX(-30%);
+}
+
+.portfolio .carousel-control-prev {
+  top: 105%;
+  left: 50%;
+  transform: translateX(-70%);
+}
+
+
+.portfolio .carousel-indicators {
+  top: 100%;
+}
+
+.portfolio .carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 30px;
+  background-color: #ff7a57;
+  color: #fff;
+  border-radius: 50%;
+
+  text-indent: 0;
+
+}
